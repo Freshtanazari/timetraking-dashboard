@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="\images\icon.svg">
+  <link type="text/css" rel="stylesheet" href="css style.css"/>
+  <link href="https://fonts.google.com/specimen/Rubik" rel="stylesheet">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!--Feel free to remove these styles or customise in your own stylesheet 👍-->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> 
+</head>
+<body>
+<div class="container">
+
+    <div class="dash-board ">
+      <div class="profile">
+        <img id="jeremy" title="an image"
+         src=".\images\image-jeremy.png">
+      <span id="txt">Report for<br></span>
+      <span id="name">Jeremy Robson</span>
+      </div>
+      <div class="dash">
+      <button onclick="daily()"  >Daily  </button>
+      <button onclick="weekly()" >Weekly </button>
+      <button onclick="monthly()" >Monthly</button>
+    </div>
+    </div>
+    
+
+
+  <div class="card-1 work">
+      <div class="icon"><img  class="icons" title="icon" id="work"src="images\icon-work.svg"> </div> 
+      <div class="cards">
+       Work<img title ="icon" class="ellipsis" src="images\icon-ellipsis.svg">
+        <div id="daily"><br>
+         <span id="hrs">5hrs</span><!-- daily -->
+         <span id="lastweek">Last Week- 7hrs</span> <!-- daily --></div>
+        <div id="weekly">
+         <span id="hrs">32hrs </span>
+         <span id="lastweek"> Last week- 36hrs</span></div>
+        <div id="monthly">
+         <span>103hrs</span> <!-- monthly -->
+         <span id="lastweek">Last Week - 128hrs</span><!-- monthly --></div>
+      </div>  
+  </div>
+
+  <div class="card-1 play">
+    <img class="icons" title="icon" src="images\icon-play.svg">
+    <div class="cards">
+    Play<img title="icon" class="ellipsis" src="images\icon-ellipsis.svg">
+     <div id="daily"><br>
+      <span id="hrs">1hr</span> <!-- daily -->
+      <span id="lastweek">Last Week - 2hrs</span> <!-- daily --></div>
+     <div id="weekly">
+      <span id="hrs">10hrs</span> <!-- weekly -->
+      <span id="lastweek">Last Week - 8hrs</span> <!-- weekly --></div>
+     <div id="monthly">
+      <span id="hrs">23hrs</span> <!-- monthly -->
+      <span id="lastweek">Last Week- 29hrs </span><!-- monthly --></div>
+    </div>
+  </div> 
+
+  <div class="card-1 study">
+    <img class="icons" title="icon" src="images\icon-study.svg">
+    <div class="cards">
+        Study<img title="icon" class="ellipsis" src="images\icon-ellipsis.svg">
+        <Div id="daily"><br>
+          <span id="hrs">0hrs</span> <!-- daily -->
+          <span id="lastweek"> Last Week - 1hr </span><!-- daily --></div>
+        <Div id="weekly">
+          <span id="hrs">4hrs </span><!-- weekly -->
+          <span id="lastweek">Last Week - 7hrs</span> <!-- weekly --></div>
+        <Div id="monthly">
+          <span id="hrs">13hrs</span> <!-- monthly -->
+          <span id="lastweek">Last Week - 19hrs</span> <!-- monthly --></Div>
+    </div>
+  </div>  
+
+  <div class="card-1 exercise">
+   <img class="icons" title="icon"  src="images\icon-exercise.svg">
+   <div class="cards">
+    Exercise<img title="icon" class="ellipsis" src="images\icon-ellipsis.svg">
+    <div id="daily"><br>
+     <span id="hrs">1hr</span> <!-- daily -->
+     <span id="lastweek"> Last Week - 1hr</span> <!-- daily --></div>
+    <div id="weekly">
+     <span id="hrs">4hrs</span> <!-- weekly -->
+     <span id="lastweek">Last Week - 5hrs </span><!-- weekly --></div>
+    <div id="monthly">
+     <span id="hrs">11hrs</span> <!-- monthly -->
+     <span id="lastweek">Last Week - 18hrs </span><!-- monthly --></div>
+   </div>
+  </div>
+
+  <div class="card-1 social">
+    <img class="icons"  title="icon" src="images\icon-social.svg">
+    <div class="cards">
+      Social<img title="icon" class="ellipsis" src="images\icon-ellipsis.svg">
+      <div id="daily"><br>
+        <span id="hrs">1hr</span> <!-- daily -->
+        <span id="lastweek">Last Week - 3hrs</span> <!-- daily --></div>
+      <div id="weekly">
+        <span id="hrs">5hrs </span><!-- weekly -->
+        <span id="lastweek">Last Week - 10hrs</span> <!-- weekly --></div>
+      <div id="monthly">
+        <span id="hrs">21hrs </span><!-- monthly -->
+        <span id="lastweek">Last Week - 23hrs </span><!-- monthly --></div>
+    </div>
+  </div>
+    
+  <div class="card-1 self-care">
+    <img class="icons" title="icon" src="images\icon-self-care.svg">
+    <div class="cards">
+      Self Care<img title="icon" class="ellipsis" src="images\icon-ellipsis.svg">
+      <div id="daily"><br>
+        <span id="hrs">0hrs</span> <!-- daily -->
+        <span id="lastweek">Last Week - 1hr</span> <!-- daily --></div>
+      <div id="weekly">
+        <span id="hrs">2hrs</span> <!-- weekly -->
+        <span id="lastweek">Last Week - 2hrs</span> <!-- weekly --></div>
+      <div id="monthly">
+        <span id="hrs">7hrs</span> <!-- monthly -->
+        <span id="lastweek">Last Week - 11hrs</span> <!-- monthly --></div>
+    </div>
+  </div>
+  
+  </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a rel="noopener" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Freshta Nazari</a>.
+  </div>
+  <script src="javascript.js"></script>
+</body>
+</html>
